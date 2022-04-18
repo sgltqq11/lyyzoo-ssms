@@ -79,6 +79,7 @@ public class ClazzServlet extends HttpServlet {
 			return;
 		}
 		String result = service.getClazzList(gradeid);
+		log.info("*******"+result) //sgl测试测试
 		//返回数据
         response.getWriter().write(result);
 	}
